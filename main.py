@@ -4,7 +4,7 @@ from user import User
 
 
 products = [
-        Product("Laptop", 2000, 15, "High-end laptop"),
+        Product("Laptop", 2000, 15, "High-end laptop"), # NAME , PRICE , QUANTITY , DESCRIPTION
         Product("Phone", 800, 20, "Smartphone"),
         Product("Tablet", 500, 25, "Android tablet"),
         Product("Headphones", 150, 30, "Noise-cancelling headphones"),
@@ -13,13 +13,13 @@ products = [
 
     # Angajați
 employees = [
-        Employee("Alice Johnson", "alice.johnson@example.com", 3000, "123 Main St"),
+        Employee("Alice Johnson", "alice.johnson@example.com", 3000, "123 Main St"), #NAME , EMAIL , SALARY , ADDRESS
         Employee("Bob Smith", "bob.smith@example.com", 4000, "456 Oak St")
     ]
 
     # Utilizatori
 users = [
-        User("John Doe", "johndoe123", "123-456-7890", "789 Pine St"),
+        User("John Doe", "johndoe123", "123-456-7890", "789 Pine St"), #NAME , USERNAME , PHONE , ADDRESS
         User("Jane Doe", "janedoe456", "098-765-4321", "321 Elm St"),
         User("James Bond", "james.bond007", "555-1234", "007 London St")
     ]
@@ -33,7 +33,7 @@ users[2].add_product(products[4])
 
     # Afișăm informațiile utilizatorilor și angajaților
 for user in users:
-    print(user.display_info())
+    print(user.display_info()) 
     
 for employee in employees:
     print(employee.display_info())
